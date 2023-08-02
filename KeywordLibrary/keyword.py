@@ -11,7 +11,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from Config import config_data
 
 
-class GenericMethods:
+class GenericMethods(object):
     template = "An exception of type {0} occurred. Arguments: \n{1!r}"
 
     # Constructor
@@ -67,5 +67,15 @@ class GenericMethods:
                 logging.info("Screenshot taken")
         except Exception as err:
             logging.error("Unable to take screenshot")
+            message = self.template.format(type(err).__name__, err.args)
+            raise type(err)(message)
+
+    def find_element(self, locator):
+        try:
+            element = self.driver.find_element(*locator)
+            logging.info(f"Found element: {locator}")
+            return element
+        except Exception as err:
+            logging.error(f"Element not found: {locator}")
             message = self.template.format(type(err).__name__, err.args)
             raise type(err)(message)

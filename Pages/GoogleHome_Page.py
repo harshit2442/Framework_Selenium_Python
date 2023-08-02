@@ -1,5 +1,7 @@
 import logging
+import time
 
+from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 
 from KeywordLibrary.keyword import GenericMethods
@@ -12,8 +14,11 @@ class GooglePage(GenericMethods):
     search_button = (By.NAME, "btnk")
     google_cookies_popup = (By.XPATH, "//+[text()='Accept all']")
 
+    """=====================Constructor==========================="""
+
     def __init__(self, driver):
         super().__init__(driver)
+        self.driver = driver
 
     """=====================Page Functions========================"""
 
@@ -24,6 +29,10 @@ class GooglePage(GenericMethods):
         logging.info("Navigated successfully to : %s" % url)
 
     def type_text_in_search_box(self, value):
-        self.enter_text_and_enter(self.search_textbox, value)
+        search_box = self.find_element(self.search_textbox)
+        search_box.send_keys(value)
+        search_box.send_keys(Keys.ENTER)
         actual_title = self.get_title()
-        assert actual_title == "Google"
+        time.sleep(2)
+        assert actual_title == "India - Google Search"
+        logging.info("Title matched")
