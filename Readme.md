@@ -55,4 +55,4 @@ We welcome contributions to this framework. If you encounter any issues, have id
 
 ## Contact
 
-For any questions or support related to the project, feel free to contact [Harshit Sinha] at [hisnha22@gmail.com].
+For any questions or support related to the project, feel free to contact Harshit Sinha at hsinha22@gmail.com.
