@@ -3,7 +3,7 @@
 ## Table of Contents
 
 - [Introduction](#Introduction)
-- [Key Features](#Key Features)
+- [Key Features](#key-features)
 - [Usage](#usage)
 - [Folder Structure](#folder-structure)
 - [Running Tests](#running-tests)
