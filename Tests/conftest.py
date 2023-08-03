@@ -1,4 +1,6 @@
 import logging
+import os
+
 import pytest
 from Config import config_data
 from selenium import webdriver

@@ -1,4 +1,4 @@
-INFO     root:conftest.py:26 
+INFO     root:conftest.py:28 
 
 =====starting test(test_search_google[chrome])================
 INFO     WDM:logger.py:11 ====== WebDriver manager ======
@@ -12,8 +12,10 @@ INFO     WDM:logger.py:11 About to download new driver from https://edgedl.me.gv
 INFO     WDM:logger.py:11 Driver downloading response is 200
 INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
 INFO     WDM:logger.py:11 Driver has been saved in cache [C:\Users\HARSHIT\.wdm\drivers\chromedriver\win64\115.0.5790.110]
-INFO     root:keyword.py:47 --------Navigated to : https://www.google.com/
-ERROR    root:keyword.py:60 ---------Element is not present: xpath//+[text()='Accept all']
+INFO     root:keyword.py:48 --------Navigated to : https://www.google.com/
+ERROR    root:keyword.py:61 ---------Element is not present: xpath//+[text()='Accept all']
 INFO     root:GoogleHome_Page.py:29 Navigated successfully to : https://www.google.com/
-INFO     root:keyword.py:76 Found element: ('name', 'q')
-INFO     root:GoogleHome_Page.py:38 Title matched
+INFO     root:keyword.py:68 Screenshot taken and attached to Allure report.
+INFO     root:keyword.py:77 Found element: ('name', 'q')
+INFO     root:GoogleHome_Page.py:39 Title matched
+INFO     root:keyword.py:68 Screenshot taken and attached to Allure report.

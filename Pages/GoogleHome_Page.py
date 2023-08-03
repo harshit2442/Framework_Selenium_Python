@@ -27,6 +27,7 @@ class GooglePage(GenericMethods):
         if self.is_element_present(self.google_cookies_popup):
             self.click_on_element(self.google_cookies_popup)
         logging.info("Navigated successfully to : %s" % url)
+        self.take_screenshot()
 
     def type_text_in_search_box(self, value):
         search_box = self.find_element(self.search_textbox)
@@ -36,3 +37,4 @@ class GooglePage(GenericMethods):
         time.sleep(2)
         assert actual_title == "India - Google Search"
         logging.info("Title matched")
+        self.take_screenshot()
