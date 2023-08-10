@@ -1,6 +1,7 @@
 import logging
 import time
 
+import allure
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 
@@ -21,7 +22,7 @@ class GooglePage(GenericMethods):
         self.driver = driver
 
     """=====================Page Functions========================"""
-
+    @allure.title("Navigate to page")
     def navigate_to_page(self, url):
         self.navigate(url)
         if self.is_element_present(self.google_cookies_popup):
@@ -29,6 +30,7 @@ class GooglePage(GenericMethods):
         logging.info("Navigated successfully to : %s" % url)
         self.take_screenshot()
 
+    @allure.title("Type text")
     def type_text_in_search_box(self, value):
         search_box = self.find_element(self.search_textbox)
         search_box.send_keys(value)
