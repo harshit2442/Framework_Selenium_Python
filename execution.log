@@ -1,21 +1,22 @@
 INFO     root:conftest.py:28 
 
 =====starting test(test_search_google[chrome])================
+INFO     WDM:logger.py:11 xdist worker is: gw0
 INFO     WDM:logger.py:11 ====== WebDriver manager ======
 INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
 INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
-INFO     WDM:logger.py:11 There is no [win64] chromedriver "115.0.5790.110" for browser google-chrome "115.0.5790.110" in cache
+INFO     WDM:logger.py:11 There is no [win64] chromedriver "115.0.5790.171" for browser google-chrome "115.0.5790.171" in cache
 INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
 INFO     WDM:logger.py:11 WebDriver version 115.0.5790.170 selected
 INFO     WDM:logger.py:11 Modern chrome version https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5790.170/win32/chromedriver-win32.zip
 INFO     WDM:logger.py:11 About to download new driver from https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5790.170/win32/chromedriver-win32.zip
 INFO     WDM:logger.py:11 Driver downloading response is 200
 INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
-INFO     WDM:logger.py:11 Driver has been saved in cache [C:\Users\HARSHIT\.wdm\drivers\chromedriver\win64\115.0.5790.110]
+INFO     WDM:logger.py:11 Driver has been saved in cache [C:\Users\HARSHIT\.wdm\gw0\drivers\chromedriver\win64\115.0.5790.171]
 INFO     root:keyword.py:48 --------Navigated to : https://www.google.com/
 ERROR    root:keyword.py:61 ---------Element is not present: xpath//+[text()='Accept all']
-INFO     root:GoogleHome_Page.py:29 Navigated successfully to : https://www.google.com/
+INFO     root:GoogleHome_Page.py:30 Navigated successfully to : https://www.google.com/
 INFO     root:keyword.py:68 Screenshot taken and attached to Allure report.
 INFO     root:keyword.py:77 Found element: ('name', 'q')
-INFO     root:GoogleHome_Page.py:39 Title matched
+INFO     root:GoogleHome_Page.py:41 Title matched
 INFO     root:keyword.py:68 Screenshot taken and attached to Allure report.

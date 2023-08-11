@@ -40,7 +40,7 @@ The *Selenium Python Framework* is a comprehensive Python-based Automated Web Te
 - **`KeywordLibrary/`:** Contains the `GenericMethods` class with reusable generic methods.
 - **`Tests/`:** Contains test classes defining test scenarios.
 - **`Config/`:** Contains configuration files for setting global variables and preferences.
-- **`Reports/`:** Contains reports integrated with allure report.
+- **`Reports/`:** Contains reports integrated with allure report (Make sure to add argument in config so that it gets generated in Report folder "-v -n 1 --alluredir=../Reports/jsonreports").
 - **`TestData/`:** Contains test data which makes the framework data driven (In Development).
 
 ## Running Tests
